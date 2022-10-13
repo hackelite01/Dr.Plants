@@ -2,7 +2,6 @@
 
 ## Dr.PLANT [Recognition of Plant Diseases by Leaf Image Classification]
 
-### <a href="https://vercel.app/" target="_blank">https://vercel.app/</a>
 
 ## <img src="./Assets/" alt="demo"/>
 
