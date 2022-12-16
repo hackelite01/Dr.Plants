@@ -17,7 +17,5 @@
         "url": "https://github.com/hackelite01/Dr.Plants/issues"
     },
     "homepage": "https://github.com/hackelite01/Dr.Plants#readme"
-    "dependencies": {
-    "express": "^4.17.1"
-  }
+  
 }
