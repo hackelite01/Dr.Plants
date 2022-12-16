@@ -1,0 +1,23 @@
+{
+    "name": "Dr.Plants",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hackelite01/Dr.Plants.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hackelite01/Dr.Plants/issues"
+    },
+    "homepage": "https://github.com/hackelite01/Dr.Plants#readme"
+    "dependencies": {
+    "express": "^4.17.1"
+  }
+}
