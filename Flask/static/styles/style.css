@@ -146,7 +146,8 @@ h5.card-title {
 }
 
 .about-para-txt p {
-  font-size: 26px;
+  font-size: 28px;
+  font-weight: 400;
   color: #000000;
   line-height: 25px;
 }
