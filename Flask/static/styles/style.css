@@ -126,7 +126,6 @@ h5.card-title {
 }
 
 .about-grid-title p,
-.about-para-txt p,
 .collection-w3layouts p,
 .ser-sevice-grid p,
 .clients-color-ile p,
@@ -138,8 +137,14 @@ h5.card-title {
 .single-title p,
 .single-title ul li,
 .single-title ul li a {
-  font-size: 33px;
+  font-size: 26px;
   color: #4c4c4c;
+  line-height: 25px;
+}
+
+.about-para-txt p {
+  font-size: 26px;
+  color: #000000;
   line-height: 25px;
 }
 
