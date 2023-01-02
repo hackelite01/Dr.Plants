@@ -2,7 +2,7 @@
 
 ## Dr.PLANT [Recognition of Plant Diseases]
 
-
+[![CodeFactor](https://www.codefactor.io/repository/github/hackelite01/dr.plants/badge/main)](https://www.codefactor.io/repository/github/hackelite01/dr.plants/overview/main)
 
  </div>
 
