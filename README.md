@@ -81,13 +81,13 @@ This process for building a model which can detect the disease assocaited with t
   ```
 - Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
 
-## Tech Stack
+# Tech Stack
 
-# Front-End
+## Front-End
 HTML <br>
 CSS <br>
 JavaScript<br>
-# Back-End
+## Back-End
 Python Flask
 
 ## Team
