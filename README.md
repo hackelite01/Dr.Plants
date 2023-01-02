@@ -81,6 +81,15 @@ This process for building a model which can detect the disease assocaited with t
   ```
 - Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
 
+## Tech Stack
+
+# Front-End
+HTML <br>
+CSS <br>
+JavaScript<br>
+# Back-End
+Python Flask
+
 ## Team
 
 Mayank Rajput = Back-End Developer <br>
