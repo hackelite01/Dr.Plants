@@ -83,7 +83,11 @@ This process for building a model which can detect the disease assocaited with t
 
 ## Team
 
-
+Mayank Rajput = Back-End Developer
+Jayesh Pansuriya = Back-End Developer
+Pallav Chavda = Front-End Developer
+Krish Dhanani = Front-End Developer
+Vaibhav Shah = Tester ( All ground level work )
 
 ## License
 
