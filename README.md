@@ -60,6 +60,31 @@ This process for building a model which can detect the disease assocaited with t
 - `Src` : All The source code for building models
 - `Models` : All the Pretrained Models of Pytorch
 
+## How to run locally 🛠️
+- Before the following steps make sure you have [git](https://git-scm.com/download), [Anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system
+- Clone the complete project with `git clone https://github.com/hackelite01/Dr.Plants` or you can just download the code and unzip it
+- **Note:** The master branch doesn't have the updated code used for deployment, to download the updated code used for deployment you can use the following command
+  ```
+  ❯ git clone -b deploy https://github.com/hackelite01/Dr.Plants
+  ```
+- `deploy` branch has only the code required for deploying the app (rest of the code that was used for training the models, data preparation can be accessed on `master` branch)
+- It is highly recommended to clone the deploy branch for running the project locally (the further steps apply only if you have the deploy branch cloned)
+- Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
+  ```
+  conda create -n Dr.Plants python=3.6.12
+  pip install -r requirements.txt
+  conda activate Dr.Plants
+  ```
+- And finally run the project with
+  ```
+  python app.py
+  ```
+- Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
+
+## Team
+
+
+
 ## License
 
 This project is Licensed under `MIT`
