@@ -10,11 +10,12 @@
 1. [Description](#description)
 2. [Leaf Image Classification](#leaf-image-classification)
 3. [Details about the Model](#details-about-the-model)
-4. [Usage](#usage)
-5. [How to Run Locally](#how-to-run-locally)
-6. [Tech Stack](#tech-stack)
-7. [License](#license)
-8. [Support](#support)
+4. [Prototype Screenshots](#prototype-screenshots)
+5. [Usage](#usage)
+6. [How to Run Locally](#how-to-run-locally)
+7. [Tech Stack](#tech-stack)
+8. [License](#license)
+9. [Support](#support)
 
 ## Description
 
@@ -54,6 +55,18 @@ This process involves building a model to detect diseases associated with leaf i
 The model can detect `38` types of `diseases` in `14 unique plants`.
 
 - See the detailed list of plants and diseases in [List](Src).
+
+## Prototype Screenshots
+
+Here are some screenshots of the prototype in action:
+1. Showing page:
+   ![Showing Page](./Assets/1.png)
+2. Input image from file explorer:
+   ![Input Image from File Explorer](./Assets/2.png)
+3. After input showing image:
+   ![After Input Showing Image](./Assets/3.png)
+4. Output:
+   ![Output](./Assets/4.png)
 
 ## Usage:
 
