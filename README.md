@@ -4,107 +4,94 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/hackelite01/dr.plants/badge/main)](https://www.codefactor.io/repository/github/hackelite01/dr.plants/overview/main)
 
- </div>
+</div>
+
+## Table of Contents
+1. [Description](#description)
+2. [Leaf Image Classification](#leaf-image-classification)
+3. [Details about the Model](#details-about-the-model)
+4. [Usage](#usage)
+5. [How to Run Locally](#how-to-run-locally)
+6. [Tech Stack](#tech-stack)
+7. [License](#license)
+8. [Support](#support)
 
 ## Description
 
-This project is an approach to the development of plant disease recognition model, based on leaf image classification, by the
-use of deep convolutional networks. The developed model is able to recognize 38 different types of plant diseases out of of 14 different plants with the ability to distinguish plant leaves from their surroundings.
+This project aims to develop a plant disease recognition model based on leaf image classification using deep convolutional networks. The model can recognize<strong> 38 different types of plant diseases from 14 different plants and distinguish plant leaves from their surroundings. The real-time response is 0.1 seconds.</strong>
 
 ## Leaf Image Classification
 
-## <img src="./Assets/batch.png" alt="batch of image"/>
+### <img src="./Assets/batch.png" alt="batch of image"/>
 
-This process for building a model which can detect the disease assocaited with the leaf image. The key points to be followed are:
+This process involves building a model to detect diseases associated with leaf images. The key points are:
 
-1. Data gathering
+1. **Data Gathering**: The dataset used is **"New Plant Diseases Dataset"**. It can be downloaded from [Kaggle](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset). It contains images of different healthy and unhealthy crop leaves.
+<br>
 
-   The dataset taken was **"New Plant Diseases Dataset"**. It can be downloaded through the link "https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
+2. **Model Building**:
+   - The model is built using PyTorch.
+   - Three models were used:
+     1. CNN model architecture includes <strong>CNN Layer, Max Pooling, Flatten, and Linear Layers</strong>.
+     2. Transfer learning with <strong>VGG16 Architecture</strong>.
+     3. Transfer learning with <strong>ResNet34 Architecture</strong>.
+<br>
 
-2. Model building
+3. **Training**: The model was trained using variants of the layers mentioned above and by varying hyperparameters. The best model achieved a test <strong>accuracy of 98.42%.</strong>
+<br>
 
-   - I have used pytorch for building the model.
-   - I used three models:-
-     1. The CNN model architecture consists of CNN Layer, Max Pooling, Flatten a Linear Layers.
-     2. Using Transfer learning VGG16 Architecture.
-     3. Using Transfer learning resnet34 Architecture.
-
-3. Training
-
-   The model was trained by using variants of above layers mentioned in model building and by varying hyperparameters. The best model was able to achieve 98.42% of test accuracy.
-
-4. Testing
-
-   The model was tested on total 17572 images of 38 classes.<br/>
-   The model used for prediction on sample images. It can be seen below:
-   <!-- <img src="" alt="index1" height="300px"/> -->
+4. **Testing**: The model was tested on 17,572 images of 38 classes. Sample predictions can be seen below:
    <div>
    <img src="./Assets/out1.png" alt="index2" height="300px" width="450"/>
    <img src="./Assets/out2.png" alt="index3" height="300px"  width="450"/>
    </div>
+<br>
 
-5. Various Model Architecture tried along with Learning Rate and Optimizer and various accuracy obtained with different models.
+5. **Model Architectures and Performance**: Various model architectures, learning rates, and optimizers were tried, with different accuracy levels obtained.
 
-<br/>
+## Details about the Model
 
-## Details about the model
+The model can detect `38` types of `diseases` in `14 unique plants`.
 
-### The model will be able to detect `38` types of `diseases` of `14 Unique plants`
-
-- The detail list of plants and diseases can be seen in [List](Src)
+- See the detailed list of plants and diseases in [List](Src).
 
 ## Usage:
 
-- `Flask` : Code for Flask Server and deployment
-- `TestImages` : Sample image for model testing
-- `Src` : All The source code for building models
-- `Models` : All the Pretrained Models of Pytorch
+- `Flask`: Code for Flask Server and deployment.
+- `TestImages`: Sample images for model testing.
+- `Src`: All source code for building models.
+- `Models`: All pre-trained models in PyTorch.
 
-## How to run locally 🛠️
-- Before the following steps make sure you have [git](https://git-scm.com/download), [Anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system
-- Clone the complete project with `git clone https://github.com/hackelite01/Dr.Plants` or you can just download the code and unzip it
-- **Note:** The master branch doesn't have the updated code used for deployment, to download the updated code used for deployment you can use the following command
-  ```
-  ❯ git clone -b deploy https://github.com/hackelite01/Dr.Plants
-  ❯ cd Dr.Plants/Flask
-  ```
-- `deploy` branch has only the code required for deploying the app (rest of the code that was used for training the models, data preparation can be accessed on `master` branch)
-- It is highly recommended to clone the deploy branch for running the project locally (the further steps apply only if you have the deploy branch cloned)
-- Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
-  ```
-  conda create -n Dr.Plants python=3.6.12
-  pip install -r requirements.txt
-  conda activate Dr.Plants
-  ```
-- And finally run the project with
-  ```
-  python app.py
-  ```
-- Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
+## How to Run Locally 🛠️
+1. Ensure you have [git](https://git-scm.com/download) installed.
+2. Clone the project:
+   `git clone https://github.com/hackelite01/Dr.Plants`
+   `cd Dr.Plants/Flask`
+3. Create and activate a Python virtual environment:
+   `python -m venv venv venv\Scripts\activate # On Windows source venv/bin/activate # On Unix or MacOS`
+4. Install the required dependencies:
+   `pip install -r requirements.txt`
+5. Run the project:
+   `python app.py`
 
-# Tech Stack
+6. Open the provided localhost URL in your web browser.
 
-## Front-End
-HTML <br>
-CSS <br>
-JavaScript<br>
-## Back-End
-Python Flask
+## Tech Stack
 
-## Team
+### Front-End
+- HTML
+- CSS
+- JavaScript
 
-Mayank Rajput = Back-End Developer <br>
-Jayesh Pansuriya = Back-End Developer <br>
-Pallav Chavda = Front-End Developer <br>
-Krish Dhanani = Front-End Developer <br>
-Vaibhav Shah = Tester ( All ground level work )
+### Back-End
+- Python Flask
 
 ## License
 
-This project is Licensed under `MIT`
+This project is licensed under the `MIT` License.
 
 ### Show your support
 
-Give a ⭐ if you like this website!
+Give a ⭐ if you like this project!
 
-<a href="https://www.buymeacoffee.com/hackelite01" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+<a href="https://www.buymeacoffee.com/hackelite01" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px" ></a>

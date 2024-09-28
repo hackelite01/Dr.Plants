@@ -5,7 +5,6 @@ import torchvision.transforms as transforms
 from PIL import Image
 import io
 
-
 class Plant_Disease_Model(nn.Module):
 
     def __init__(self):

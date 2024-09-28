@@ -1,1 +1,6 @@
 */__pycache__
+.venv
+./myenv
+./myenvls
+Flask/myenv
+Flask/myenvls
