@@ -2,7 +2,7 @@ numpy
 pandas
 Flask
 Pillow
-gunicorn == 22.0.0
+gunicorn == 23.0.0
 torch
 torchvision
 # https://download.pytorch.org/whl/cpu/torch-1.8.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
